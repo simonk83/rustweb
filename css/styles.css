@@ -1,0 +1,538 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  box-sizing: border-box;
+  
+}
+ul {
+    font-size:0;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: #0088a9
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #333;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.fa-bars {
+    background-color:#212529;
+}
+
+.server-1 {
+  background-image: url("../img/server1.png");
+}
+
+.server-2 {
+  background-image: url("../img/server2.png");
+}
+.server-3 {
+  background-image: url("../img/server3.png");
+}
+.server-4 {
+  background-image: url("../img/server4.png");
+}
+
+.server-5 {
+  background-image: url("../img/server5.png");
+}
+.server-6 {
+  background-image: url("../img/server6.png");
+}
+
+li,
+a,
+button {
+  font-family: "Montserrat", "san-serrif";
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  background-color:#333333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  border-bottom: 2px solid #000;
+  border-top: 2px solid #000;
+  list-style-type: none;
+  background-color: #333333;
+}
+
+.logo {
+  cursor: pointer;
+  text-decoration: none;
+  width: auto;
+  height: 75px;
+  list-style-type: none;
+}
+
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: #0088a9;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button,
+input {
+  padding: 9px 25px;
+  background-color: #0088a9;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #0d4f5f;
+}
+/*==========Servers==========*/
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 125px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 125px;
+  background-size: cover;
+  background-color: rgb(25,25,25);
+}
+
+h2 {
+  display: flex;
+  background: #333333;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  justify-content: center;
+}
+
+p {
+  display: flex;
+  background: #333333;
+  padding: 5px;
+  padding-left: 5px;
+  font-family: "Montserrat", "san-serrif";
+  justify-content: center;
+  font-size: 10px;
+}
+.server-status {
+  display: flex;
+  justify-content: center;
+  background: #333333;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+.join {
+  background: #2b2b2b;
+  color: #edf9f1;
+  padding: 15px 10px;
+  display: block;
+  text-align: center;
+  margin: 20px 50px;
+  border: 2px solid #0088a9;
+  border-radius: 10px;
+  font-family: "Montserrat", "san-serrif";
+}
+.servers {
+  background: #333333;
+  color: #edf9f1;
+  width: 500px;
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 8px #000;
+  font-family: "Montserrat", "san-serrif";
+}
+
+.servers-image {
+  height: 200px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.servers:hover {
+  transform: scale(1.02);
+  transition: all 0.2s ease;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  font-family: "Open Sans";
+  padding-top: 20px;
+  color: #fff;
+}
+.footerhome {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: auto;
+  font-family: "Open Sans";
+  padding-top: 20px;
+  color: #fff;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: auto;
+  background: #111;
+}
+.footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+  background: #111;
+}
+.footer-content .footertext {
+  max-width: 500px;
+  margin: auto;
+  line-height: 1;
+  font-size: 14px;
+  background: #111;
+}
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+  background: #111;
+  
+}
+.socials li {
+  margin: 0 20px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #fff;
+}
+.socials a i {
+  font-size: 1.1rem;
+  transition: color 0.4s ease;
+  background-color:rgb(25,25,25);
+}
+.socials a:hover i {
+  color: violet;
+}
+
+.footer-bottom {
+  background: #000;
+  width: auto;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom .copyright {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+  background: #000;
+}
+
+/*===========Server Stauts===========*/
+h5 {
+  font-size: 32px;
+}
+
+.statusspan {
+  color: lightgreen;
+  background-color: #333333;
+}
+
+.players {
+  font-size: 32px;
+  color: #0088a9;
+  background-color: #333333;
+}
+
+.ip {
+  border-bottom: 1px solid #000;
+}
+.playersborder {
+  display: flex;
+  background-color: #333333;
+  font-family: "Montserrat", "san-serrif";
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+.maxplayers {
+    background-color: #333333;
+    color:#0088a9
+}
+/*=============Stat Page==============*/
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0088a9;
+  font-size: 3rem;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.serverlistranks {
+  display: flex;
+  font-family: "Montserrat", "san-serrif";
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.serverselect li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.serverselect li a {
+  transition: all 0.3s ease 0s;
+  font-size: 30px;
+}
+
+.serverselect li a:hover {
+  color: #0088a9;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.fa-sort {
+  background: #009879;
+}
+
+th{
+    background-color: #009879;
+    color: #ffff;
+    text-align: left;
+    cursor: pointer;
+    width: 100px;
+}
+
+th,
+td {
+    padding: 12px 15px;
+}
+
+tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tr:nth-child(even) td {
+    background-color: #f3f3f3;
+}
+
+tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+tr:hover {font-weight: bold;
+    color: #009879;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#0088a9),
+    to(#0088a9)
+  );
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25),
+    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+  background: linear-gradient(
+    to right,
+    #201c29,
+    #201c29 1px,
+    #100e17 1px,
+    #100e17
+  );
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 25px;
+}
+
+select {
+  display: flex;
+  background-color: #0088a9;
+  color: #edf9f1;
+  position: relative;
+  font-family: "Montserrat", "san-serrif";
+  justify-content: center;
+  font-size: 10px;
+  width: 150px;
+  height: 50px;
+  bottom: 150px;
+  left: 100px;
+  border-radius: 10px;
+}
+
+.personalselect {
+  background-color: #0088a9;
+  color: #edf9f1;
+  position: relative;
+  font-family: "Montserrat", "san-serrif";
+  justify-content: center;
+  font-size: 14px;
+  width: 160px;
+  bottom: 170px;
+  left: 100px;
+}
+.serverbutton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+}
+
+.playersslash {
+  font-size: 32px;
+  color: #edf9f1;
+  background-color: #333333;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.restart {
+  display: flex;
+  font-size: 20px;
+  background-color: #333333;
+  font-family: "Montserrat", "san-serrif";
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+.uptime {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  color: #7c7b7b;
+  background-color: #333333;
+  border-bottom: 1px solid #000;
+  font-family: "Montserrat", "san-serrif";
+}
+.view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0088a9;
+  background-color: rgb(25, 25, 25);
+  font-size: 16px;
+  padding-bottom: 30px;
+}
+
+.serverinput {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.serverinputbtn:hover {
+  background-color: #0d4f5f;
+  color: #edf9f1;
+}

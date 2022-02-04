@@ -1,0 +1,3 @@
+1) Navigate to the JS folder
+2) In each file, at the top change the api link assigned to your server
+3) Save and refresh your site. Your servers will now show the correct info

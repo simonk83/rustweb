@@ -1,0 +1,37 @@
+How to add more servers (6 predifined)
+
+If you want to have more than one server listed. Do the following.
+
+Go to servercards.php file located in the modules folder
+
+Next, select the comment (<!--) on line 13 and remove it.
+
+Currently your site now has 6 servers listed.
+
+If you do not have 6 servers do the following.
+
+Replace the comment (<!--) on these lines
+
+2 Servers - Line 23
+
+3 Servers - Line 33
+
+4 Servers - Line 43
+
+5 Servers - Line 53
+
+6 Servers - Delete the comment on line 62
+
+--------------------------------------------------------------------
+
+Do the same for stats.php
+
+2 Servers - Line 9
+
+3 Servers - Line 10
+
+4 Servers - Line 11
+	
+5 Servers - Line 12
+
+6 Servers - Delete the comment at the end of line 12
